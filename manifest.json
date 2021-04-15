@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "FireDex",
+    "version": "1.0",
+
+    "description": "Here will be Yandex.Mail button. Someday. Hopefully...",
+
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.mozilla.org/*"],
+            "js": ["borderify.js"]
+        }
+    ]
+}
